@@ -1,0 +1,25 @@
+<%- include('layout', {title:"Login"}) %>
+
+  <div class = "container">
+    <h1>Stadium </h1>
+      <hr />
+      <h2>Login</h2>
+      <div class = "row">
+        <form class="row g-3 needs-validation" novalidate method="post" action="/users/login">
+          <div class="col-md-4">
+            <label for="email" class="form-label">Email</label>
+              <input type="text" class="form-control" id="email" name="email" required>
+          </div>
+
+          <div class="col-md-4">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+          </div>
+
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Login Button</button>
+          </div>
+        </form>
+      </div>
+  </div>
+ 
